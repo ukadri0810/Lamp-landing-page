@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamp Login Animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="intro">
+        <span class="eyebrow">Interactive Login Concept</span>
+        <h1>Lamp Login<br><strong>Animation</strong></h1>
+        <p>Pull the string to switch on the lamp and reveal the login card.</p>
+      </div>
+
+      <div class="experience">
+        <div class="hint">Pull the string to toggle login</div>
+
+        <div class="stage" id="stage">
+          <div class="lamp-wrap">
+            <div class="lamp-head"></div>
+            <div class="light-beam"></div>
+            <button class="cord" id="toggleLamp" aria-label="Toggle lamp">
+              <span class="cord-line"></span>
+              <span class="cord-knob"></span>
+            </button>
+            <div class="stand"></div>
+            <div class="base"></div>
+            <div class="floor-glow"></div>
+          </div>
+
+          <form class="login-card" id="loginCard">
+            <h2>Welcome Back</h2>
+            <label>
+              <span>Email address</span>
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" placeholder="••••••••" />
+            </label>
+            <label>
+              <span>Confirm Password</span>
+              <input type="password" placeholder="••••••••" />
+            </label>
+            <a href="#">Forgot Password?</a>
+            <button type="button" class="primary">Sign In</button>
+            <div class="divider"><span></span>or<span></span></div>
+            <button type="button" class="google">Continue with Google</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
