@@ -3,58 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lamp Login Animation</title>
+  <title>Lamp Login Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="intro">
-        <span class="eyebrow">Interactive Login Concept</span>
-        <h1>Lamp Login<br><strong>Animation</strong></h1>
-        <p>Pull the string to switch on the lamp and reveal the login card.</p>
+  <main class="scene" id="scene">
+    <div class="noise"></div>
+    <header class="topbar">
+      <div>
+        <h1>Lamp <span>Login</span></h1>
+        <p>Pull the string to reveal the login</p>
       </div>
+      <div class="badges">
+        <span>Secure</span>
+        <span>Private</span>
+        <span>Fast</span>
+      </div>
+    </header>
 
-      <div class="experience">
-        <div class="hint">Pull the string to toggle login</div>
+    <section class="hero">
+      <div class="lamp-area">
+        <div class="hint">
+          <div class="tap-icon">⌄</div>
+          <strong>Pull the string</strong>
+          <p>to toggle the login</p>
+        </div>
 
-        <div class="stage" id="stage">
-          <div class="lamp-wrap">
-            <div class="lamp-head"></div>
-            <div class="light-beam"></div>
-            <button class="cord" id="toggleLamp" aria-label="Toggle lamp">
-              <span class="cord-line"></span>
-              <span class="cord-knob"></span>
+        <div class="lamp-wrap" id="lampWrap">
+          <div class="wall-glow"></div>
+          <div class="lamp">
+            <div class="shade-top"></div>
+            <div class="shade"></div>
+            <div class="rim"></div>
+            <div class="bulb"></div>
+            <button class="cord" id="cord" aria-label="Toggle login">
+              <span class="chain"></span>
+              <span class="pull"></span>
             </button>
             <div class="stand"></div>
             <div class="base"></div>
-            <div class="floor-glow"></div>
           </div>
+          <div class="light-cone"></div>
+          <div class="floor-light"></div>
+        </div>
+      </div>
 
-          <form class="login-card" id="loginCard">
-            <h2>Welcome Back</h2>
-            <label>
-              <span>Email address</span>
-              <input type="email" placeholder="you@example.com" />
+      <div class="login-panel" id="loginPanel">
+        <div class="login-card">
+          <div class="card-glow"></div>
+          <h2>Welcome Back</h2>
+          <p class="sub">Glad to see you again. Please login to continue.</p>
+
+          <form>
+            <label class="field">
+              <span>✉</span>
+              <input type="email" placeholder="Email address" />
             </label>
-            <label>
-              <span>Password</span>
-              <input type="password" placeholder="••••••••" />
+            <label class="field">
+              <span>🔒</span>
+              <input type="password" placeholder="Password" />
+              <button type="button">⌾</button>
             </label>
-            <label>
-              <span>Confirm Password</span>
-              <input type="password" placeholder="••••••••" />
+            <label class="field">
+              <span>🔒</span>
+              <input type="password" placeholder="Confirm Password" />
+              <button type="button">⌾</button>
             </label>
-            <a href="#">Forgot Password?</a>
-            <button type="button" class="primary">Sign In</button>
+            <a href="#" class="forgot">Forgot Password?</a>
+            <button class="primary" type="button">Sign In</button>
             <div class="divider"><span></span>or<span></span></div>
-            <button type="button" class="google">Continue with Google</button>
+            <button class="google" type="button"><b>G</b> Continue with Google</button>
           </form>
         </div>
       </div>
     </section>
-  </main>
 
+    <footer>
+      <span>© 2026 Lamp Login Experience</span>
+      <span>A beautiful login experience • crafted with animations</span>
+    </footer>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
